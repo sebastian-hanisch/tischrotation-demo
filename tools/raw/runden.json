@@ -1,0 +1,632 @@
+[
+ {
+  "s": 3,
+  "m": 4,
+  "seed": 100000,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.035,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 4,
+  "seed": 100001,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.05,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 4,
+  "seed": 100002,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.05,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 4,
+  "seed": 100003,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.02,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 4,
+  "seed": 100004,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.075,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 5,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.035,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 5,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.045,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 5,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.025,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 5,
+  "seed": 100003,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.05,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 5,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.04,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 6,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.06,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 6,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.045,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 6,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.045,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 6,
+  "seed": 100003,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.065,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 6,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.035,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 7,
+  "seed": 100000,
+  "suche": 6,
+  "greedy": 4.0,
+  "zufall": 1.025,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 7,
+  "seed": 100001,
+  "suche": 6,
+  "greedy": 5.0,
+  "zufall": 1.045,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 7,
+  "seed": 100002,
+  "suche": 6,
+  "greedy": 5.0,
+  "zufall": 1.03,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 7,
+  "seed": 100003,
+  "suche": 6,
+  "greedy": 4.0,
+  "zufall": 1.025,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 7,
+  "seed": 100004,
+  "suche": 6,
+  "greedy": 4.0,
+  "zufall": 1.055,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 5,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 5,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 5,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 5,
+  "seed": 100003,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 5,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 2.0,
+  "zufall": 1.005,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 6,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 6,
+  "seed": 100001,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 6,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 6,
+  "seed": 100003,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 6,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 7,
+  "seed": 100000,
+  "suche": 4,
+  "greedy": 4.0,
+  "zufall": 1.005,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 7,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 7,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 7,
+  "seed": 100003,
+  "suche": 4,
+  "greedy": 4.0,
+  "zufall": 1.005,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 7,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 8,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.01,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 8,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 8,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 8,
+  "seed": 100003,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 8,
+  "seed": 100004,
+  "suche": 5,
+  "greedy": 4.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 5,
+  "m": 6,
+  "seed": 100000,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 5,
+  "m": 6,
+  "seed": 100001,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 5,
+  "m": 6,
+  "seed": 100002,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 5,
+  "m": 6,
+  "seed": 100003,
+  "suche": 5,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 5,
+  "m": 6,
+  "seed": 100004,
+  "suche": 4,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 6,
+  "seed": 100000,
+  "suche": 2,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 6,
+  "seed": 100001,
+  "suche": 2,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 6,
+  "seed": 100002,
+  "suche": 2,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 6,
+  "seed": 100003,
+  "suche": 2,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 6,
+  "seed": 100004,
+  "suche": 2,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 0
+ },
+ {
+  "s": 6,
+  "m": 7,
+  "seed": 100000,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 7,
+  "seed": 100001,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 7,
+  "seed": 100002,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 7,
+  "seed": 100003,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 7,
+  "seed": 100004,
+  "suche": 3,
+  "greedy": 2.0,
+  "zufall": 1.0,
+  "greedy_limit": 4
+ },
+ {
+  "s": 6,
+  "m": 8,
+  "seed": 100000,
+  "suche": 3,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 8,
+  "seed": 100001,
+  "suche": 3,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 8,
+  "seed": 100002,
+  "suche": 3,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 8,
+  "seed": 100003,
+  "suche": 3,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 6,
+  "m": 8,
+  "seed": 100004,
+  "suche": 3,
+  "greedy": 3.0,
+  "zufall": 1.0,
+  "greedy_limit": 5
+ },
+ {
+  "s": 3,
+  "m": 10,
+  "seed": 100000,
+  "suche": 8,
+  "greedy": 7.0,
+  "zufall": 1.035,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 10,
+  "seed": 100001,
+  "suche": 8,
+  "greedy": 7.0,
+  "zufall": 1.035,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 10,
+  "seed": 100002,
+  "suche": 8,
+  "greedy": 7.0,
+  "zufall": 1.025,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 10,
+  "seed": 100003,
+  "suche": 8,
+  "greedy": 7.0,
+  "zufall": 1.06,
+  "greedy_limit": 0
+ },
+ {
+  "s": 3,
+  "m": 10,
+  "seed": 100004,
+  "suche": 8,
+  "greedy": 7.0,
+  "zufall": 1.03,
+  "greedy_limit": 0
+ },
+ {
+  "s": 4,
+  "m": 10,
+  "seed": 100000,
+  "suche": 7,
+  "greedy": 5.0,
+  "zufall": 1.0,
+  "greedy_limit": 3
+ },
+ {
+  "s": 4,
+  "m": 10,
+  "seed": 100001,
+  "suche": 6,
+  "greedy": 5.0,
+  "zufall": 1.005,
+  "greedy_limit": 4
+ },
+ {
+  "s": 4,
+  "m": 10,
+  "seed": 100002,
+  "suche": 6,
+  "greedy": 5.0,
+  "zufall": 1.005,
+  "greedy_limit": 5
+ },
+ {
+  "s": 4,
+  "m": 10,
+  "seed": 100003,
+  "suche": 6,
+  "greedy": 6.0,
+  "zufall": 1.0,
+  "greedy_limit": 2
+ },
+ {
+  "s": 4,
+  "m": 10,
+  "seed": 100004,
+  "suche": 7,
+  "greedy": 6.0,
+  "zufall": 1.005,
+  "greedy_limit": 3
+ }
+]
