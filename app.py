@@ -7,6 +7,7 @@ Gefragt ist, wie viele Runden es ohne Wiederholung gibt (Paare, die sich nicht z
 Lauffähig mit: streamlit run app.py
 """
 
+import pandas  # noqa: F401  (früh importiert, Vorsichtsmaßnahme gegen einen Importfehler beim Kaltstart der Cloud-App)
 import streamlit as st
 
 import trt_constants as C
