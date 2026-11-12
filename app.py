@@ -62,6 +62,19 @@ Dazu die Schranke (mehr als m Runden gehen nicht) und ein Schalter für einen **
 Weiter unten: die **Kernfrage**, vier **Experimente** mit vorgerechneten Messreihen und der Expander **🔧 Wie wir das erreichen – vollständiger Methodenvergleich**.
 """
 )
+
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/tischrotation-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Hier feiert eine Firma mit mehreren Abteilungen. In jeder Runde wird neu an Tische gesetzt, an jedem Tisch sitzt eine Person aus jeder Abteilung. Die Frage ist, wie viele Runden es gibt, in denen sich kein Paar ein zweites Mal am Tisch begegnet, und welches Verfahren solche Runden findet.
+
+Die App vergleicht zufällige Runden, ein Verfahren, das Runde für Runde eine zulässige wählt, eine Suche mit Tauschen und eine Konstruktion nach einer Rechenregel. Sie zeigt die Schranke für die Rundenzahl, kann für kleine Feiern klären, ob eine Rundenzahl geht, und rechnet, was ein zusätzlicher Tisch bringt. Die Feier ist ausgedacht, es sind keine echten Personen.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/tischrotation-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
 st.caption("🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, um ein Szenario zu teilen.")
 
 load_permalink_settings()
@@ -213,6 +226,28 @@ with st.expander("🔧 Wie wir das erreichen – vollständiger Methodenvergleic
                 getattr(st, kind)(text)
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/tischrotation-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind $s$ Abteilungen mit je $m$ Personen und $w$ Runden mit je $m$ Tischen zu $s$ Plätzen; an jedem Tisch sitzt genau eine Person je Abteilung. Gesucht ist ein Plan, in dem sich kein Paar aus verschiedenen Abteilungen zweimal am Tisch begegnet. Die Formeln unten sind das vollständige Modell der exakten Entscheidung; die Konstruktion rechnet in einem endlichen Körper mit $m$ Elementen.
+
+| Symbol | Bedeutung |
+|---|---|
+| $s$ | Zahl der Abteilungen, zugleich Personen je Tisch |
+| $m$ | Personen je Abteilung, zugleich Tische je Runde |
+| $w$ | Zahl der Runden |
+| $r$ | Runde, $r = 1,\dots,w$ |
+| $t$ | Tisch, $t = 1,\dots,m$ |
+| $d, e$ | Abteilungen, $d, e = 1,\dots,s$ |
+| $i, j$ | Personen innerhalb einer Abteilung, $i, j = 1,\dots,m$ |
+| $x_{r,d,i,t}$ | 1, wenn Person $i$ der Abteilung $d$ in Runde $r$ an Tisch $t$ sitzt, sonst 0 |
+| $y_{r}^{(d,i),(e,j)}$ | 1, wenn die beiden Personen in Runde $r$ an einem Tisch sitzen |
+| $q$ | Größe des Körpers bei Auffüllen und Streichen: die kleinste Zahl $q \ge \max(m, s)$, für die es einen Körper mit $q$ Elementen gibt |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/tischrotation-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Gegeben:** Abteilungen $d = 1,\dots,s$ mit je $m$ Personen, Personen $(d, i)$ mit $i = 1,\dots,m$; $w$ Runden $r = 1,\dots,w$ mit je $m$ Tischen $t = 1,\dots,m$.
@@ -230,7 +265,7 @@ $$\sum_{r} y_{r}^{(d,i),(e,j)} \le 1 \quad \forall\, d \ne e,\ i,\ j, \qquad y_{
 | $x_{r,d,i,t}$ | Person $(d, i)$ sitzt in Runde $r$ an Tisch $t$ |
 | $y_{r}^{(d,i),(e,j)}$ | die beiden Personen sitzen in Runde $r$ an einem Tisch |
 
-Die erste Gleichung setzt jede Person genau einmal, die zweite besetzt an jedem Tisch genau eine Person je Abteilung; die Ungleichungen verbieten, dass sich ein Paar aus verschiedenen Abteilungen zweimal begegnet.
+Die erste Gleichung setzt jede Person genau einmal, die zweite besetzt an jedem Tisch genau eine Person je Abteilung; die Ungleichungen verbieten, dass sich ein Paar aus verschiedenen Abteilungen zweimal begegnet. Alle $x$ und $y$ sind 0/1-Variablen (für $y$ genügt $y \ge 0$); das Modell hat keine Zielfunktion, es entscheidet, ob $w$ Runden gehen, und die größte Rundenzahl ergibt sich durch Lösen für $w = 1, 2, \dots$. Es kennt nur $m$ Tische zu $s$ Plätzen; Auffüllen und Streichen liegt außerhalb dieses Modells.
 **Schranke:** Jede Person trifft je Runde genau eine Person jeder anderen Abteilung; nach $m$ Runden kennt sie alle, also gilt $w \le m$.
 **Körper-Konstruktion:** Für $m = q$ Primzahlpotenz und $s \le q$ sitzt $(d, i)$ in Runde $r$ an Tisch $t$, wenn $i = t + r \cdot d$ in $\mathrm{GF}(q)$; dann hat jedes Fremdpaar genau eine Runde gemeinsam ($w = m$).
 **Auffüllen und Streichen:** für $q \ge m$ die Konstruktion bilden und die Personen mit $i > m$ streichen; das gibt $q$ Runden ohne Wiederholung, aber bis zu $q$ Tische mit $s$ oder weniger Personen (bis zu $q - m$ weniger).
