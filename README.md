@@ -13,9 +13,9 @@ Wer Abteilungen auf einer Feier mischen will, setzt jede Runde neu. Dass sich zw
 
 - **Gegeben:** Abteilungen d = 1…s mit je m Personen; w Runden mit je m Tischen zu s Plätzen; an jedem Tisch sitzt genau eine Person je Abteilung.
 - **Gesucht:** ein Plan, in dem sich kein Paar aus verschiedenen Abteilungen zweimal am Tisch begegnet. Eine **Wiederholung** ist eine zweite Begegnung desselben Paares; jede zählt eins.
-- **Schranke:** Jede Person trifft je Runde genau eine Person jeder anderen Abteilung; nach m Runden kennt sie alle, die (m + 1)-te Runde enthält eine Wiederholung. Bei **s > m** gibt es nur **eine** Runde: die s Personen eines Tisches müssten sich in der nächsten Runde auf m < s Tische verteilen (Taubenschlag).
+- **Schranke:** Jede Person trifft je Runde genau eine Person jeder anderen Abteilung; nach m Runden kennt sie alle, die (m + 1)-te Runde enthält eine Wiederholung. Bei **s > m** gibt es nur **eine** Runde: die s Personen eines Tisches müssten sich in der nächsten Runde auf m < s Tische verteilen (Schubfachprinzip).
 - **Körper-Konstruktion:** Ist m eine Primzahlpotenz und s ≤ m, sitzt Person i der Abteilung d in Runde r an Tisch t, wenn i = t + r·d in einem Körper mit m Elementen. Dann sitzt jedes Paar aus verschiedenen Abteilungen genau einmal zusammen: m Runden, die Schranke.
-- **Auffüllen und Streichen** (Schalter): für m, das kein Körper ist, die Konstruktion für die nächste Körpergröße q ≥ max(m, s) bilden und in jeder Abteilung die Personen mit Nummer ≥ m streichen. Ergebnis: q Runden ohne Wiederholung, aber bis zu q Tische statt m und Tische mit bis zu q − m Personen weniger als s.
+- **Auffüllen und Streichen** (Schalter): für m, das kein Körper ist, die Konstruktion für die nächste Körperordnung q ≥ max(m, s) bilden und in jeder Abteilung die Personen mit Nummer ≥ m streichen. Ergebnis: q Runden ohne Wiederholung, aber bis zu q Tische statt m und Tische mit bis zu q − m Personen weniger als s.
 - Das vollständige Modell der exakten Entscheidung (Variablen, Nebenbedingungen, Symboltabelle) steht im 📐-Expander der App; Annahmen und Grenzen im Expander „🚧 Wo die Annahmen enden“.
 
 ## Methodik

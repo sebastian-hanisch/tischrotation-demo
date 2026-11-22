@@ -172,7 +172,7 @@ def test_rechenbudget_30_mio_zuege_lassen_mindestens_eine_wiederholung_uebrig():
 
 
 def test_bei_mehr_abteilungen_als_personen_je_abteilung_gibt_es_nur_eine_runde():
-    """s > m: die s Personen eines Tisches müssten sich in der nächsten Runde auf m < s Tische verteilen (Taubenschlag). Der Löser beweist es für zwei Größen."""
+    """s > m: die s Personen eines Tisches müssten sich in der nächsten Runde auf m < s Tische verteilen (Schubfachprinzip). Der Löser beweist es für zwei Größen."""
     assert ev.Analysis(ev.Settings(4, 3), {}).bound == 1 and ev.Analysis(ev.Settings(3, 3), {}).bound == 3
     for s, m in ((4, 3), (5, 4)):
         assert X.exists_rounds(s, m, 1)[0] == "ja" and X.exists_rounds(s, m, 2)[0] == "unmöglich"

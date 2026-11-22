@@ -15,7 +15,7 @@ def next_prime_power(x: int) -> int:
 
 
 def transversal_rounds(s: int, q: int) -> list:
-    """q Runden mit q Tischen für s Abteilungen à q Personen (q Körpergröße, s ≤ q): Person i der Abteilung d sitzt in Runde r an Tisch t, wenn i = t + r·d im Körper.
+    """q Runden mit q Tischen für s Abteilungen à q Personen (q Körperordnung, s ≤ q): Person i der Abteilung d sitzt in Runde r an Tisch t, wenn i = t + r·d im Körper.
 
     Jedes Paar aus verschiedenen Abteilungen sitzt genau einmal an einem Tisch, kein Paar derselben Abteilung."""
     if s > q:

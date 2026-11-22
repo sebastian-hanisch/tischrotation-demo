@@ -13,7 +13,7 @@ def exists_rounds(s: int, m: int, w: int, time_limit: float = 20.0, workers: int
     from ortools.sat.python import cp_model
 
     if w > m:
-        return "unmöglich", None  # mehr als m Runden: nach m Runden kennt jede Person alle Fremden (Taubenschlag), also eine Wiederholung
+        return "unmöglich", None  # mehr als m Runden: nach m Runden kennt jede Person alle Fremden (Schubfachprinzip), also eine Wiederholung
     model = cp_model.CpModel()
     x = {(r, d, i, t): model.NewBoolVar("") for r in range(w) for d in range(s) for i in range(m) for t in range(m)}
     for r in range(w):

@@ -46,7 +46,7 @@ ASSUMPTIONS_MARKDOWN = """
 | Eine Wiederholung ist eine zweite Begegnung desselben Paares an einem Tisch; wie schlimm sie ist, geht nicht ein (jede zählt eins) | Modell dieser Demo |
 | Alle Abteilungen sind gleich groß | Modell dieser Demo (ungleiche Abteilungen sind nicht umgesetzt) |
 | Der Zufalls-Seed legt Zufallsrunden, Greedy und Annealing fest; die Konstruktion hängt nur an (s, m) | Demo |
-| Zusätzliche Tische (Schalter) heißt: q Tische statt m, wobei q die nächste Körpergröße ist; Tische mit weniger als s Personen (bis zu q − m weniger) sind für die Feier akzeptabel | Wählbare Annahme |
+| Zusätzliche Tische (Schalter) heißt: q Tische statt m, wobei q die nächste Körperordnung ist; Tische mit weniger als s Personen (bis zu q − m weniger) sind für die Feier akzeptabel | Wählbare Annahme |
 | Wünsche, Sperrpaare, Sitznachbarn am runden Tisch und Tischgrößen ungleich s sind nicht modelliert | Nicht umgesetzt |
 """
 
@@ -206,7 +206,7 @@ with st.expander("🔧 Wie wir das erreichen – vollständiger Methodenvergleic
 | **Greedy** | Jede Runde ist eine zulässige Runde bezüglich aller früheren (Tiefensuche mit Zurücksetzen, Knotenlimit) | Findet zu jedem Stand eine zulässige Runde, wenn die Tiefensuche sie innerhalb des Knotenlimits findet | Frühe Runden verbauen spätere; in den Größen 6×7, 6×8 und 4×10 endet die Suche meist am Knotenlimit statt vollständig |
 | **Annealing** | Runden schrittweise hinzufügen; Personen derselben Abteilung zwischen Tischen tauschen, bis keine Wiederholung bleibt | Findet Pläne ohne Struktur | Feste Temperatur 0,25, kein Abkühlplan; bleibt ab etwa 20 bis 25 Personen meist vor der Schranke stehen; mehr Zugvorschläge senken die Zahl der Wiederholungen nur langsam |
 | **Körper-Konstruktion** | Person i der Abteilung d sitzt in Runde r an Tisch t, wenn i = t + r·d in einem Körper mit m Elementen | Erreicht die Schranke m, jedes Fremdpaar genau einmal | Braucht m als Primzahlpotenz (2, 3, 4, 5, 7, 8, 9, 11, 13) und s ≤ m |
-| **Auffüllen und Streichen** | Konstruktion für die nächste Körpergröße q ≥ m, dann in jeder Abteilung die Personen mit Nummer ≥ m streichen | q > m Runden ohne Wiederholung, auch wenn m kein Körper ist | Mehr Tische (q statt m), Tische mit bis zu q − m Personen weniger; Einzelpersonen am Tisch möglich (bei s = 2, s > m und sehr ungleichen Abteilungen) |
+| **Auffüllen und Streichen** | Konstruktion für die nächste Körperordnung q ≥ m, dann in jeder Abteilung die Personen mit Nummer ≥ m streichen | q > m Runden ohne Wiederholung, auch wenn m kein Körper ist | Mehr Tische (q statt m), Tische mit bis zu q − m Personen weniger; Einzelpersonen am Tisch möglich (bei s = 2, s > m und sehr ungleichen Abteilungen) |
 """
         )
         st.markdown("**Annahmen:**")
@@ -243,7 +243,7 @@ with st.expander("📐 Mathematische Formulierung"):
 | $i, j$ | Personen innerhalb einer Abteilung, $i, j = 1,\dots,m$ |
 | $x_{r,d,i,t}$ | 1, wenn Person $i$ der Abteilung $d$ in Runde $r$ an Tisch $t$ sitzt, sonst 0 |
 | $y_{r}^{(d,i),(e,j)}$ | 1, wenn die beiden Personen in Runde $r$ an einem Tisch sitzen |
-| $q$ | Größe des Körpers bei Auffüllen und Streichen: die kleinste Zahl $q \ge \max(m, s)$, für die es einen Körper mit $q$ Elementen gibt |
+| $q$ | Ordnung des Körpers bei Auffüllen und Streichen: die kleinste Zahl $q \ge \max(m, s)$, für die es einen Körper mit $q$ Elementen gibt |
 
 [Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/tischrotation-erklaert.html#fachleute)
         """

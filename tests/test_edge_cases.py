@@ -36,7 +36,7 @@ def test_auffuellen_ohne_wirkung_wenn_m_ein_koerper_ist():
 
 
 def test_auffuellen_bei_mehr_abteilungen_als_personen():
-    """6 Abteilungen à 3: q = 7 (nächste Körpergröße ≥ 6), also 7 Runden bei 3 bis 7 Tischen; keine Wiederholung."""
+    """6 Abteilungen à 3: q = 7 (nächste Körperordnung ≥ 6), also 7 Runden bei 3 bis 7 Tischen; keine Wiederholung."""
     q, plan = D.fill_plan(6, 3)
     mt = K.analyse_plan(plan, 6, 3)
     assert q == 7 and mt.rounds == 7 and mt.repeats == 0 and mt.same_dept == 0 and mt.coverage == 1.0 and mt.partition_ok
