@@ -1,7 +1,6 @@
 # Tischrotation: Wer sitzt wann neben wem? – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-tischrotation-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-tischrotation-demo.streamlit.app/)**
 
 Fall-Demo für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (Themenseite „Sitzplätze optimieren“). Eine **Firmenfeier** mit s Abteilungen zu je m Personen: In jeder Runde wird neu an **m Tische zu s Personen** gesetzt, an jedem Tisch eine Person je Abteilung. Gefragt ist, wie viele Runden es gibt, in denen **sich kein Paar ein zweites Mal begegnet**, und welches Verfahren sie findet: **Zufall, Greedy, Annealing** oder eine **Körper-Konstruktion** aus der Designtheorie. Dazu die Schranke, ein exakter Löser (CP-SAT) für kleine Feiern und ein Schalter für einen **zusätzlichen Tisch** („Auffüllen und Streichen“).
 
